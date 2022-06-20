@@ -1,0 +1,4 @@
+  <video autoplay loop playsinline  controls poster="{% if section.settings.poster != blank %}{{ section.settings.poster | img_url : "original"}}{% else %}https://res.cloudinary.com/gb2020/image/upload/c_fit,w_1017/v1589189855/samples/landscapes/beach-boat.jpg{% endif %}" data-wf-ignore="true" data-object-fit="cover"> 
+      <source src="{% if section.settings.file != blank %} {{ section.settings.file }}{% endif %}" type="video/mp4" data-wf-ignore="true">
+
+    </video>
